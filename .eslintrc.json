@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "**/*"
+  ],
+  "plugins": [
+    "@nrwl/nx"
+  ],
+  "rules": {
+    "@typescript-eslint/no-namespace": false
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@nrwl/nx/typescript"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
+      "extends": [
+        "plugin:@nrwl/nx/javascript"
+      ],
+      "rules": {}
+    }
+  ]
+}
